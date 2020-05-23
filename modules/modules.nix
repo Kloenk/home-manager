@@ -9,6 +9,7 @@ nixpkgs:
 
 # If disabled, the pkgs attribute passed to this function is used instead.
 , useNixpkgsModule ? true
+, ...
 }:
 
 with lib;
