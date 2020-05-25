@@ -99,6 +99,10 @@ in {
 
         environment = serviceEnvironment;
 
+        unitConfig = {
+          RequiresMountsFor = "/home/${username}";
+        };
+
         serviceConfig = {
           User = usercfg.home.username;
           Type = "oneshot";
